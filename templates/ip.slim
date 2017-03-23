@@ -1,9 +1,8 @@
 h2
   | IP
 
-form action="#"
+form action="http://localhost:4000/ip"
 
-  p
-  | This form have to be filled
+  == param_input("ip")
 
   input.btn.btn-primary.right#submit type="submit" value="Send"
