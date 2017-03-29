@@ -4,6 +4,7 @@ before do
   @pages = %w"ip locations connections stationboard weather stations weathers future_weathers"
   @author = 'IIUN'
   @year = 2016
+  @api_url = "https://borercorsini-saas-app.herokuapp.com"
 end
 
 get '/ip' do
