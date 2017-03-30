@@ -1,9 +1,9 @@
 h2
   | Connections
 
-form action="#"
+form action="#{@api_url}/connections"
 
-  p
-  | This form have to be filled
+  == param_input("from")
+  == param_input("to")
 
   input.btn.btn-primary.right#submit type="submit" value="Send"
