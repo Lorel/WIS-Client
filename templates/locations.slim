@@ -1,9 +1,8 @@
 h2
   | Locations
 
-form action="#"
+form action="#{@api_url}/locations"
 
-  p
-  | This form have to be filled
+  == param_input("location")
 
   input.btn.btn-primary.right#submit type="submit" value="Send"

@@ -4,6 +4,11 @@ before do
   @pages = %w"ip locations connections stationboard weather stations weathers future_weathers"
   @author = 'IIUN'
   @year = 2016
+  if request.url.include? "localhost"
+    @api_url = "http://localhost:4000"
+  else
+    @api_url = "https://borercorsini-saas-app.herokuapp.com"
+  end
 end
 
 get '/ip' do
